@@ -1,13 +1,14 @@
 {
   "name": "webpack-starter-kit",
   "version": "1.1.0",
-  "description": "",
+  "description": "[Живая страница](https://luxplanjay.github.io/webpack-starter-kit/) после деплоя\r через `npm run deploy`.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
     "build": "webpack --env.mode production --config ./webpack/config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
